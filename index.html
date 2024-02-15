@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href = "style.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    </head>
+    <body>
+
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "images/logo.png" class = "logo">
+                <ul id ="sidemenu">
+                    <li><a href = "#header">Home</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#services">Services</a></li>
+                    <li><a href = "#portfolio">Portfolio</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                    <span class="material-symbols-outlined" onclick="closemenu()">close</span>
+                </ul>
+                <span class="material-symbols-outlined" onclick="openmenu()">menu</span>
+            </nav>
+            <div class = "img-bg">
+            <img src = "images/background.png" class = "background">
+            
+            <div class = "header-text">
+                <h1>Hello,I'm <br><span>Akhila Goud Palem </span></h1>
+                <p> Java Developer | Frontend Developer</p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--------about----->
+    <div id ="about">
+        <div class = "container">
+            <div class = "row">
+               <div class = "about-col-1">
+                    <img src = "images/user.jpg">
+                </div>
+                <div class = "about-col-2">
+                    <h1 class = "sub-title"> About Me</h1><br>
+                    <p>Enthusiastic and dedicated Full Stack Developer with a passion for creating efficient and user-friendly web applications.
+
+                        Recently completed a comprehensive course in Full Stack Java Development at Vcube SoftwareSolutions,
+                        equipped with hands-on experience in front-end technologies.
+                        
+                        Seeking opportunities to apply my understanding of both front-end and back-end concepts. Open to learning and contributing to real-world projects. Let's connect and explore the possibilities!</p>
+                    <div class = "tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class = "tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core Java</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>HTML & CSS</span></li>
+                            <li><span>JDBC</span></li>
+                            <li><span>MVC Architecture</span></li>
+                            <li><span>Spring Boot</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class = "tab-contents" id="experience">
+                        <ul>
+                            <li><span>Nov 2022-April 2023</span><br>Worked as Analyst at Capgemini</li>
+                            
+                        </ul>
+                    </div>
+                    <div class = "tab-contents" id ="education">
+                        <ul>
+                            <li><span>2022</span><br>Bharat Institute Of Engineering and technology</li>
+                            <li><span>2018</span><br> Sri Gayatri Junior College</li>
+                            <li><span>2016</span><br> BVB Kamala rani Sanghi public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------services--------->
+    <div id = "services">
+        <div class = "container">
+            <h1 class = "sub-title"> My Services</h1>
+            <div class = "services-list">
+                <div>
+                    
+                    <h2>Java Developer</h2>
+                    <p> I'm interested in applying for java developer role. This role is an exciting opportunity and a challenge that i'm eager to take on!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2> UI Developer</h2>
+                    <p> Front-end developers have a direct impact on the user experience (UX) of a website or application. Through their coding expertise, they create intuitive interfaces, optimise performance, and ensure seamless interactions. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2>Full Stack Developer</h2>
+                    <p> Full stack developers, with their multi-dimensional skillset are equipped to step in anywhere across the development spectrum to provide an end-to-end solution.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-------portfolio----->
+    <div id="portfolio">
+        <div class = "container">
+            <h1 class ="sub-title"> My Work</h1>
+            <div class ="work-list">
+                <div class ="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>iuytuwihdygueb uihedgyusxjhgsb</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+                <div class ="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>iuytuwihdygueb uihedgyusxjhgsb</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+                <div class ="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>iuytuwihdygueb uihedgyusxjhgsb</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-----contact----->
+    <div id ="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><span class="material-symbols-outlined">mail</span>palemakhila2801@gmail.com</p>
+                    <p><span class="material-symbols-outlined"> phone </span>7893478102</p>
+                    <div class="social-icons">
+                        <!--<a href="https://www.linkedin.com/in/akhila-palem-b7814b238/"><img src="images/linkedin.png"></a>-->
+
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>                 
+                     </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright PALEM AKHILA GOUD</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+    </body>
+</html>
